@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>My Title</dc:title>
+    <dc:subject>Reference</dc:subject>
+    <dc:rights>Copyright Kalin Staykov 2017</dc:rights>
+    <dc:description>Simple epub template</dc:description>
+    <dc:date opf:event="publication">2017-01-31</dc:date>
+    <dc:language>en</dc:language>
+    <meta name="cover" content="epub_logo_color.jpg" />
+    <meta content="0.5.0" name="Sigil version" />
+  </metadata>
+  <manifest>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml" />
+    <item href="Styles/style.css" id="style" media-type="text/css" />
+    <item href="Text/Contents.xhtml" id="Contents.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/002.xhtml" id="x002.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/003.xhtml" id="x003.xhtml" media-type="application/xhtml+xml" />
+    <item href="Text/Cover.xhtml" id="Cover.xhtml" media-type="application/xhtml+xml" />
+    <item href="Images/epub_logo_color.jpg" id="epub_logo_color.jpg" media-type="image/jpeg" />
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="Cover.xhtml" />
+    <itemref idref="Contents.xhtml" />
+    <itemref idref="x002.xhtml" />
+    <itemref idref="x003.xhtml" />
+  </spine>
+  <guide>
+    <reference href="Text/Cover.xhtml" title="Cover" type="cover" />
+  </guide>
+</package>
